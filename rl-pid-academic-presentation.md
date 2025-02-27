@@ -572,3 +572,10 @@ Genel Değerlendirme:
 Genel olarak ITSR’niz çok iyi görünüyor ve tam araştırma sunumu için büyük bir potansiyel gösteriyor. Haziran ayında sonuçları görmeyi dört gözle bekliyoruz!
 
 Başarılar!
+
+PWM kontrollü MOSFET ile kapsülü levite edecek elektromıknatısların akımı düzenlenirken geri beslemeli kontrol yöntemi kullanılarak hassas ayarlamalar yapılması öngörülmüştür. Sistemde elektromıknatıslar üzerinden geçen akım bir şönt direnci üzerinden ölçülerek STM32 mikrodenetleyicisinin ADC (Analog-Dijital Çevirici) pini, direncin iki ucu arasındaki gerilim farkını okuyarak gerçek akım değerini belirlemek için işler. Bu değer mikrodenetleyiciye aktarılarak PWM duty cycle ayarlanır. Aynı zamanda elektromıknatısın oluşturduğu manyetik alan etkisini değerlendirebilmek için kullanılan endüktif sensörlerden gelen veriler ile çelik rayla kapsülün uzaklığı ölçülür. STM32 mikrodenetleyicisi, sensörden gelen mesafe verisini ve şönt direncinden hesaplanan akım verisini birleştirerek kurulan PID kontrol sistemini uygular. Akım kontrolü yapılırken ölçülen elektromıknatısların akımını etkilememek için oldukça küçük ohm değerine sahip olan şönt direnci kullanılmıştır. Bu sayede elektromıknatısların çekim gücü hassas şekilde hesaplanarak kapsülün belirli mesafede dengede kalması sağlanır. Bu kapalı döngü sistemini anlatan akış şeması şekil 3.2.1’de gösterilmiştir.
+
+
+
+
+# Düzenlenmiş
