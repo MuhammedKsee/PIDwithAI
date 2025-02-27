@@ -545,14 +545,30 @@ self.state += dx
 - Yaklaşım, farklı robotik sistemlere ve kontrol problemlerine genelleştirilebilir
 - Kod tabanı açık kaynaklı olarak paylaşılarak topluluk katkılarına açıktır
 
----
 
-## Teşekkür
+Partech Teknik ITSR Geri Bildirimi
 
-(İlgili kişi, kurum ve destekleyicilere teşekkürler)
+ITSR umut verici görünüyor ve araştırmanın net bir özetini sunuyor. Ancak, öneriyi daha da geliştirebilmeniz için birkaç önerimiz ve önemli sorularımız var.
 
----
+1. Araştırmanın Gerekliliği ve Bilgi Açığı:
+ITSR’nizde bu araştırmanın neden önemli olduğunu ve hangi bilgi açığını doldurmayı hedeflediğinizi açıklayan bir kısım eksik. Daha önce yapılmış çalışmalardan nasıl farklılaştığınızı belirtin ve bu araştırmanın yenilikçi yönlerini açıklayın.
 
-## İletişim
+2. Giriş Bölümü:
+Giriş kısmı, araştırma problemini ve önerilen çözümün (AI destekli PID kontrol) bu problemi nasıl ele aldığını daha iyi vurgulayacak şekilde düzenlenebilir. Bu, çalışmanın Hyperloop bağlamında neden önemli olduğunu netleştirecektir.
 
-(İletişim bilgileri ve kaynaklar)
+3. PID Kontrol Sistemi ile İlişki:
+PID kontrol sisteminin ne olduğuna dair açıklama, Hyperloop ile bağlantısının nasıl kurulduğunu ve bu sistemin nasıl kullanılabileceğini kapsayacak şekilde genişletilebilir. Özellikle, planladığınız levitasyon sistemi ile bağlantısını açıklamanız faydalı olur.
+
+4. Takviyeli Öğrenme Modeli:
+Takviyeli öğrenme modelinin eğitim sürecini ve bu modelin dinamik koşullar altında güvenli ve optimal çalışmayı nasıl sağladığını açıklayan bir bölüm eklenmesi önerilir. Bu, çalışmanızın teknik derinliğini artıracaktır.
+
+5. AI Tabanlı Kontrol Sisteminin Risk ve Faydaları:
+Kontrol sistemine yapay zeka eklemenin faydalarını ve olası risklerini tartışan bir bölüm eklemek iyi olacaktır. Sistemin potansiyel risklerini tanımanız, çalışmanızın güvenilirliğini ve profesyonelliğini artırır.
+
+6. Daha Ayrıntılı Açıklamalar:
+ITSR’nizdeki açıklamalar oldukça öz ve anlaşılır olsa da, final araştırmanızda her konuyu biraz daha detaylandırmanız önerilir. Bu, okuyucuların konuyu daha net anlamalarını sağlayacaktır.
+
+Genel Değerlendirme:
+Genel olarak ITSR’niz çok iyi görünüyor ve tam araştırma sunumu için büyük bir potansiyel gösteriyor. Haziran ayında sonuçları görmeyi dört gözle bekliyoruz!
+
+Başarılar!
