@@ -339,18 +339,12 @@ class RobotController:
   - Ultrasonik mesafe ölçümü
   - Çalışma aralığı: 2cm - 400cm
 - **Enkoder**:
-  - Motorların açısal pozisyon ve hız ölçümü
   - Quadrature kodlama
 
 #### 4.3.3 Aktüatör Sistemi
-- **DC Motor Sürücüler**:
   - H-köprü devresi
   - PWM (Pulse Width Modulation) kontrol
   - Yönlendirme kontrolü
-- **Motor Özellikleri**:
-  - 12V DC motorlar
-  - Redüktörlü
-  - Enkoder geri bildirimi
 
 ---
 
@@ -544,38 +538,6 @@ self.state += dx
 - Sistem, öğrenme yeteneği sayesinde değişen koşullara uyum sağlayabilir
 - Yaklaşım, farklı robotik sistemlere ve kontrol problemlerine genelleştirilebilir
 - Kod tabanı açık kaynaklı olarak paylaşılarak topluluk katkılarına açıktır
-
-
-Partech Teknik ITSR Geri Bildirimi
-
-ITSR umut verici görünüyor ve araştırmanın net bir özetini sunuyor. Ancak, öneriyi daha da geliştirebilmeniz için birkaç önerimiz ve önemli sorularımız var.
-
-1. Araştırmanın Gerekliliği ve Bilgi Açığı:
-ITSR’nizde bu araştırmanın neden önemli olduğunu ve hangi bilgi açığını doldurmayı hedeflediğinizi açıklayan bir kısım eksik. Daha önce yapılmış çalışmalardan nasıl farklılaştığınızı belirtin ve bu araştırmanın yenilikçi yönlerini açıklayın.
-
-2. Giriş Bölümü:
-Giriş kısmı, araştırma problemini ve önerilen çözümün (AI destekli PID kontrol) bu problemi nasıl ele aldığını daha iyi vurgulayacak şekilde düzenlenebilir. Bu, çalışmanın Hyperloop bağlamında neden önemli olduğunu netleştirecektir.
-
-3. PID Kontrol Sistemi ile İlişki:
-PID kontrol sisteminin ne olduğuna dair açıklama, Hyperloop ile bağlantısının nasıl kurulduğunu ve bu sistemin nasıl kullanılabileceğini kapsayacak şekilde genişletilebilir. Özellikle, planladığınız levitasyon sistemi ile bağlantısını açıklamanız faydalı olur.
-
-4. Takviyeli Öğrenme Modeli:
-Takviyeli öğrenme modelinin eğitim sürecini ve bu modelin dinamik koşullar altında güvenli ve optimal çalışmayı nasıl sağladığını açıklayan bir bölüm eklenmesi önerilir. Bu, çalışmanızın teknik derinliğini artıracaktır.
-
-5. AI Tabanlı Kontrol Sisteminin Risk ve Faydaları:
-Kontrol sistemine yapay zeka eklemenin faydalarını ve olası risklerini tartışan bir bölüm eklemek iyi olacaktır. Sistemin potansiyel risklerini tanımanız, çalışmanızın güvenilirliğini ve profesyonelliğini artırır.
-
-6. Daha Ayrıntılı Açıklamalar:
-ITSR’nizdeki açıklamalar oldukça öz ve anlaşılır olsa da, final araştırmanızda her konuyu biraz daha detaylandırmanız önerilir. Bu, okuyucuların konuyu daha net anlamalarını sağlayacaktır.
-
-Genel Değerlendirme:
-Genel olarak ITSR’niz çok iyi görünüyor ve tam araştırma sunumu için büyük bir potansiyel gösteriyor. Haziran ayında sonuçları görmeyi dört gözle bekliyoruz!
-
-Başarılar!
-
-PWM kontrollü MOSFET ile kapsülü levite edecek elektromıknatısların akımı düzenlenirken geri beslemeli kontrol yöntemi kullanılarak hassas ayarlamalar yapılması öngörülmüştür. Sistemde elektromıknatıslar üzerinden geçen akım bir şönt direnci üzerinden ölçülerek STM32 mikrodenetleyicisinin ADC (Analog-Dijital Çevirici) pini, direncin iki ucu arasındaki gerilim farkını okuyarak gerçek akım değerini belirlemek için işler. Bu değer mikrodenetleyiciye aktarılarak PWM duty cycle ayarlanır. Aynı zamanda elektromıknatısın oluşturduğu manyetik alan etkisini değerlendirebilmek için kullanılan endüktif sensörlerden gelen veriler ile çelik rayla kapsülün uzaklığı ölçülür. STM32 mikrodenetleyicisi, sensörden gelen mesafe verisini ve şönt direncinden hesaplanan akım verisini birleştirerek kurulan PID kontrol sistemini uygular. Akım kontrolü yapılırken ölçülen elektromıknatısların akımını etkilememek için oldukça küçük ohm değerine sahip olan şönt direnci kullanılmıştır. Bu sayede elektromıknatısların çekim gücü hassas şekilde hesaplanarak kapsülün belirli mesafede dengede kalması sağlanır. Bu kapalı döngü sistemini anlatan akış şeması şekil 3.2.1’de gösterilmiştir.
-
-
 
 
 # Düzenlenmiş
